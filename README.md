@@ -9,6 +9,7 @@ I had the good fortune of attending Apple’s tvOS Tech Talk in Seattle this win
 We needed to roll our own custom focus effect - but fortunately, it turned out to be pretty straightforward!
 
 Here’s what the finished product looks like:
+
 ![image of finished product](http://clrk.it/13MmT+)
 
 There's a whole write-up about this project over on [devsign.co](devsign.co/notes/custom-focus-effects-in-tvos)

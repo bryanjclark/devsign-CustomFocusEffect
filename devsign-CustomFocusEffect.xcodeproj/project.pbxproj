@@ -7,16 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931BCF721C8606A100F4399D /* CustomFocusableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BCF6E1C8606A100F4399D /* CustomFocusableButton.swift */; };
+		931BCF731C8606A100F4399D /* CustomFocusableViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BCF6F1C8606A100F4399D /* CustomFocusableViewType.swift */; };
+		931BCF741C8606A100F4399D /* CustomFocusEffectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BCF701C8606A100F4399D /* CustomFocusEffectCoordinator.swift */; };
+		931BCF751C8606A100F4399D /* ParallaxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BCF711C8606A100F4399D /* ParallaxStyle.swift */; };
+		931BCF781C8606C900F4399D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BCF771C8606C900F4399D /* RoundButton.swift */; };
+		931BCF7A1C86070600F4399D /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931BCF791C86070600F4399D /* AppTheme.swift */; };
 		938B003D1C86037D00EDCE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B003C1C86037D00EDCE12 /* AppDelegate.swift */; };
 		938B003F1C86037D00EDCE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B003E1C86037D00EDCE12 /* ViewController.swift */; };
 		938B00441C86037D00EDCE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938B00431C86037D00EDCE12 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		931BCF6E1C8606A100F4399D /* CustomFocusableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFocusableButton.swift; sourceTree = "<group>"; };
+		931BCF6F1C8606A100F4399D /* CustomFocusableViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFocusableViewType.swift; sourceTree = "<group>"; };
+		931BCF701C8606A100F4399D /* CustomFocusEffectCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFocusEffectCoordinator.swift; sourceTree = "<group>"; };
+		931BCF711C8606A100F4399D /* ParallaxStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxStyle.swift; sourceTree = "<group>"; };
+		931BCF771C8606C900F4399D /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		931BCF791C86070600F4399D /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		938B00391C86037D00EDCE12 /* devsign-CustomFocusEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devsign-CustomFocusEffect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		938B003C1C86037D00EDCE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		938B003E1C86037D00EDCE12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		938B00411C86037D00EDCE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		938B00431C86037D00EDCE12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		938B00451C86037D00EDCE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931BCF761C8606A400F4399D /* CustomFocusEffect */ = {
+			isa = PBXGroup;
+			children = (
+				931BCF6E1C8606A100F4399D /* CustomFocusableButton.swift */,
+				931BCF6F1C8606A100F4399D /* CustomFocusableViewType.swift */,
+				931BCF701C8606A100F4399D /* CustomFocusEffectCoordinator.swift */,
+				931BCF711C8606A100F4399D /* ParallaxStyle.swift */,
+			);
+			name = CustomFocusEffect;
+			sourceTree = "<group>";
+		};
 		938B00301C86037D00EDCE12 = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				938B00441C86037D00EDCE12 /* Assets.xcassets in Resources */,
-				938B00421C86037D00EDCE12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931BCF741C8606A100F4399D /* CustomFocusEffectCoordinator.swift in Sources */,
+				931BCF731C8606A100F4399D /* CustomFocusableViewType.swift in Sources */,
+				931BCF781C8606C900F4399D /* RoundButton.swift in Sources */,
+				931BCF751C8606A100F4399D /* ParallaxStyle.swift in Sources */,
 				938B003F1C86037D00EDCE12 /* ViewController.swift in Sources */,
+				931BCF7A1C86070600F4399D /* AppTheme.swift in Sources */,
 				938B003D1C86037D00EDCE12 /* AppDelegate.swift in Sources */,
+				931BCF721C8606A100F4399D /* CustomFocusableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +291,7 @@
 				938B004A1C86037D00EDCE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,14 +10,38 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	private static let buttonDiameter: CGFloat = 200
+
+	private let roundButtonOne = CustomFocusableButton.roundButtonWithColor(AppTheme.Colors.whiteColor, diameter: ViewController.buttonDiameter)
+	private let roundButtonTwo = CustomFocusableButton.roundButtonWithColor(AppTheme.Colors.greenColor, diameter: ViewController.buttonDiameter)
+	private let roundButtonThree = CustomFocusableButton.roundButtonWithColor(AppTheme.Colors.blueColor, diameter: ViewController.buttonDiameter)
+
+	private var focusEffectCoordinator: CustomFocusEffectCoordinator!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+		view.backgroundColor = AppTheme.Colors.backgroundColor
+
+		// Layout the round buttons
+		let margin: CGFloat = 60
+		let offsetAmount = ViewController.buttonDiameter + margin
+
+		roundButtonOne.frame = CGRect(origin: CGPoint(x: margin, y: margin), size: CGSize(width: ViewController.buttonDiameter, height: ViewController.buttonDiameter))
+		roundButtonTwo.frame = CGRectOffset(roundButtonOne.frame, offsetAmount, 0)
+		roundButtonThree.frame = CGRectOffset(roundButtonTwo.frame, offsetAmount, 0)
+
+		let roundButtons = [roundButtonOne, roundButtonTwo, roundButtonThree]
+		roundButtons.forEach { view.addSubview($0) }
+
+		// Create our focus coordinator
+		focusEffectCoordinator = CustomFocusEffectCoordinator(views: roundButtons, parallaxStyle: AppTheme.CustomFocus.defaultParallaxStyle)
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	// MARK: Focus Engine
+
+	override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+		focusEffectCoordinator.updateFromContext(context, withAnimationCoordinator: coordinator)
 	}
 
 

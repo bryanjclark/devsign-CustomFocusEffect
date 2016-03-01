@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		938B003D1C86037D00EDCE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B003C1C86037D00EDCE12 /* AppDelegate.swift */; };
 		938B003F1C86037D00EDCE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B003E1C86037D00EDCE12 /* ViewController.swift */; };
-		938B00421C86037D00EDCE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938B00401C86037D00EDCE12 /* Main.storyboard */; };
 		938B00441C86037D00EDCE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938B00431C86037D00EDCE12 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,9 @@
 			children = (
 				938B003C1C86037D00EDCE12 /* AppDelegate.swift */,
 				938B003E1C86037D00EDCE12 /* ViewController.swift */,
-				938B00401C86037D00EDCE12 /* Main.storyboard */,
+				931BCF771C8606C900F4399D /* RoundButton.swift */,
+				931BCF791C86070600F4399D /* AppTheme.swift */,
+				931BCF761C8606A400F4399D /* CustomFocusEffect */,
 				938B00431C86037D00EDCE12 /* Assets.xcassets */,
 				938B00451C86037D00EDCE12 /* Info.plist */,
 			);
@@ -137,17 +138,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		938B00401C86037D00EDCE12 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				938B00411C86037D00EDCE12 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		938B00461C86037D00EDCE12 /* Debug */ = {

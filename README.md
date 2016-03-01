@@ -12,6 +12,6 @@ Here’s what the finished product looks like:
 
 ![image of finished product](http://clrk.it/13MmT+)
 
-There's a whole write-up about this project over on [devsign.co](devsign.co/notes/custom-focus-effects-in-tvos)
+There's a whole write-up about this project over on [devsign.co](https://devsign.co/notes/custom-focus-effects-in-tvos)
 
 Enjoy!
